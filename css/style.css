@@ -1,0 +1,280 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: 'Inter', Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family: "interregular", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+a{
+	color: #000;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width: 100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 500;
+	color: #000;
+}
+.hidden{
+	display: none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+@font-face {
+    font-family: 'Inter-Thin';
+    src: url('Inter-Thin.woff2') format('woff2'),
+        url('Inter-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Semibold';
+    src: url('Inter-SemiBold.woff2') format('woff2'),
+        url('Inter-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('Inter-Regular.woff2') format('woff2'),
+        url('Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('Inter-Medium.woff2') format('woff2'),
+        url('Inter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Light';
+    src: url('Inter-Light.woff2') format('woff2'),
+        url('Inter-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-ExtraLight';
+    src: url('Inter-ExtraLight.woff2') format('woff2'),
+        url('Inter-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-ExtraBold';
+    src: url('Inter-ExtraBold.woff2') format('woff2'),
+        url('Inter-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('Inter-Bold.woff2') format('woff2'),
+        url('Inter-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter-Black';
+    src: url('Inter-Black.woff2') format('woff2'),
+        url('Inter-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+::placeholder {
+  color: #9B9B9B;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+::-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+header {
+	
+}
+header section.wrapper {
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header section.wrapper h1.logo {
+	width: 170px;
+}
+header section.wrapper h1.logo a.logo {
+	width: 100%;
+}
+header section.wrapper h1.logo a.logo img {
+	width: 100%;
+}
+header section.wrapper nav.middle {}
+header section.wrapper nav.middle ul {
+	display: flex;
+	justify-content: space-between;
+}
+header section.wrapper nav.middle ul li {
+	margin-right: 50px;
+}
+header section.wrapper nav.middle ul:last-child {
+	margin-right: 0;
+}
+header section.wrapper nav.middle ul li a {
+	font-size: 16px;
+	font-weight: 500;
+}
+header section.wrapper nav.right {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header section.wrapper nav.right div.search {
+	margin-right: 30px;
+	width: 20px;
+}
+header section.wrapper nav.right div.cart {
+	background: #fe8e0b;
+	width: 40px;
+	height: 38px;
+	border-radius: 6px;
+}
+header section.wrapper nav.right div.search a {
+	width: 100%;
+}
+header section.wrapper nav.right div.cart a {
+	width: 100%;
+	height:100%;
+	display: flex;
+	justify-content: center;
+}
+header section.wrapper nav.right div img {
+	width: 100%;
+}
+header section.wrapper nav.right div.cart img {
+	width: 50%;
+}
+
+#spotlight {}
+#spotlight section.wrapper {
+	margin: 200px auto;
+	display: flex;
+}
+#spotlight div {
+	width: 50%;
+}
+#spotlight div.right span.title {
+	display: block;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+#spotlight div.right h1 {
+	font-size: 107px;
+	margin-bottom: 25px;
+	font-family: 'Inter-Black';
+	
+}
+#spotlight div.right p {
+	font-size: 18px;
+	margin-bottom: 40px;
+	line-height: 1.3em;
+}
+#spotlight div.right a.button {
+	margin-right: 20px;
+	color: #fff;
+}
+#spotlight div.right a.button.buy_now {
+	background: #fe8e0b;
+	padding: 12px 24px;
+	border-radius: 8px ;
+}
+#spotlight div.right a.button.explore {
+	background: #3a2929;
+	padding: 12px 24px;
+	border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
