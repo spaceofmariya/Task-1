@@ -223,21 +223,29 @@ header section.wrapper nav.right div.cart img {
 	width: 50%;
 }
 
-#spotlight {}
+#spotlight {
+	background-image: url(../assets/serum_hero.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 700px 800px;
+}
 #spotlight section.wrapper {
-	margin: 200px auto;
+	padding: 220px 0;
 	display: flex;
+	justify-content: flex-end;
 }
 #spotlight div {
-	width: 50%;
+	width: 52%;
 }
 #spotlight div.right span.title {
+	font-size: 18px;
 	display: block;
 	text-transform: uppercase;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 #spotlight div.right h1 {
-	font-size: 107px;
+	font-size: 128px;
+	line-height: 0.9em;
 	margin-bottom: 25px;
 	font-family: 'Inter-Black';
 	
@@ -250,16 +258,50 @@ header section.wrapper nav.right div.cart img {
 #spotlight div.right a.button {
 	margin-right: 20px;
 	color: #fff;
+	font-size: 13px;
 }
 #spotlight div.right a.button.buy_now {
 	background: #fe8e0b;
-	padding: 12px 24px;
+	padding: 18px 60px;
 	border-radius: 8px ;
+	/* border-right: 30px solid white;
+	border-top: 50px solid transparent; */
 }
 #spotlight div.right a.button.explore {
 	background: #3a2929;
-	padding: 12px 24px;
+	padding: 18px 60px;
 	border-radius: 8px;
+}
+
+#brands {
+	background: #f7f5f1;
+	height: 130px;
+	display: flex;
+	align-items: center;
+}
+#brands ul.brands {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+#brands ul.brands li {
+	width: 12%;
+	margin-right: 100px;
+}
+#brands ul.brands li.ebay {
+	width: 10%;
+}
+#brands ul.brands li.cisco {
+	width: 7%;
+}
+#brands ul.brands li.uber {}
+#brands ul.brands li.microsoft {
+	width: 16%;
+	margin-right: 0;
+}
+#brands ul.brands li img {
+	display: block;
+	width: 100%;
 }
 
 
