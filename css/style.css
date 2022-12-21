@@ -304,6 +304,183 @@ header section.wrapper nav.right div.cart img {
 	width: 100%;
 }
 
+#about {
+	margin: 100px 0;
+}
+#about section.wrapper {
+	display: flex;
+	position: relative;
+}
+#about div.left {
+	width: 67%;
+	background: #dedddc;
+	padding: 150px 70px;
+	border-radius: 20px;
+}
+#about h2.about {
+	font-size: 60px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+#about p.about_start {
+	display: inline-block;
+	margin-bottom: 20px;
+	
+}
+#about p.about_end {
+	margin-bottom: 15px	;
+}
+#about section.wrapper div.left div.button {
+	/* clip-path: polygon(0 0, 99% 0, 60% 100%, 0% 100%); 
+	background-color:#000;
+	width: 400px;
+	height: 200px; */
+
+}
+#about div.right {
+	width: 36%;
+	height:592px;
+	border-radius: 8px;
+	position: absolute;
+	right: 0;
+}
+#about div.right img {
+	border-radius: 20px;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#blog {
+	text-align: center;
+	margin: 100px 0;
+}
+#blog h3.blog {
+	font-size: 56px;
+	font-weight: 600;
+	margin-bottom: 50px;
+}
+#blog section.wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+#blog section.wrapper section.best_award {
+	width: 33%;
+}
+#blog section.wrapper section.best_award div.image_container {
+	width: 90%;
+	height :250px;
+	margin: 0 auto;
+}
+#blog section.wrapper section.best_award div.image_container img {
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+}
+#blog section.wrapper section.best_award h5 {
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#blog section.wrapper section.best_award p {}
+
+footer {
+	background: #d9dade;
+	padding: 120px 0;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	z-index: 1;
+}
+footer section.wrapper {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+footer section.wrapper div.contact {
+	text-align: center;
+	margin-right: 170px;
+}
+footer section.wrapper div.contact a.logo {
+	display: block;
+	width: 130px;
+	margin: 0 auto; 
+	margin-bottom: 20px;
+}
+footer section.wrapper div.contact a.logo img {
+	display: block;
+	width: 100%;
+}
+footer section.wrapper div.contact a.email {
+	display: block;
+	margin-bottom: 15px;
+	font-size: 13px;
+}
+footer section.wrapper div.contact a.mob_number {
+	font-size: 13px;
+}
+footer section.wrapper div.contact ul.social {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+footer section.wrapper div.contact ul.social li {
+	background-color: #fe8e0b;
+	width: 30px;
+	height: 30px;
+	margin-right: 15px;
+	margin-bottom: 0;
+	border-radius: 6px;
+}
+footer section.wrapper div.contact ul.social li.twt {
+	margin-right: 0;
+}
+footer section.wrapper div.contact ul.social li a {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer section.wrapper div.contact ul.social li a img {
+	filter:invert(100%);
+	width: 70%;
+}
+footer section.wrapper ul.blog, .about, .product {
+	margin-right: 170px;
+}
+footer section.wrapper ul li {
+	margin-bottom: 15px;
+}
+footer section.wrapper ul li:last-child {
+	margin-bottom: 0;
+}
+footer section.wrapper ul li h4 {
+	font-size: 20px;
+	font-weight: 600;
+}
+footer section.wrapper ul li a {
+	font-size: 13px;
+}
+footer div.image {
+	/* max-width: 400px;
+	max-height:480px; */
+	/* width: 20%;  */
+	height: 315px;  
+	overflow: hidden;
+	position: absolute;
+	right: -38px;
+	top: 60px;
+} 
+footer div.image img {
+	width: 100%;
+	display: block;
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	/* margin: -10px -100px -150px -150px; */
+}
+
 
 
 
