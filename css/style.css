@@ -18,7 +18,7 @@ del {
 	text-decoration: line-through;
 }
 body {
-	font-family: 'Inter-Regular', Arial, Helvetica, sans-serif;
+	font-family: 'Inter'/*, Arial, Helvetica, sans-serif*/;
 	font-size: 17px;
 	color: #000;
 	overflow-x: hidden;
@@ -144,8 +144,14 @@ br.clear {
     font-style: normal;
     font-display: swap;
 }
-
-
+@font-face {
+    font-family: 'Inria Serif';
+    src: url('../fonts/InriaSerif-Bold.woff2') format('woff2'),
+        url('../fonts/InriaSerif-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 ::placeholder {
   color: #9B9B9B;
   opacity: 1;
@@ -160,7 +166,8 @@ br.clear {
 }
 
 header {
-	
+	font-family: 'Inter-Medium';
+
 }
 header section.wrapper {
 	height: 80px;
@@ -201,14 +208,14 @@ header section.wrapper nav.right div.search {
 	margin-right: 30px;
 	width: 20px;
 }
+header section.wrapper nav.right div.search a {
+	width: 100%;
+}
 header section.wrapper nav.right div.cart {
 	background: #fe8e0b;
 	width: 40px;
 	height: 38px;
 	border-radius: 6px;
-}
-header section.wrapper nav.right div.search a {
-	width: 100%;
 }
 header section.wrapper nav.right div.cart a {
 	width: 100%;
@@ -216,10 +223,10 @@ header section.wrapper nav.right div.cart a {
 	display: flex;
 	justify-content: center;
 }
-header section.wrapper nav.right div img {
+header section.wrapper nav.right div a img {
 	width: 100%;
 }
-header section.wrapper nav.right div.cart img {
+header section.wrapper nav.right div.cart a img {
 	width: 50%;
 }
 
@@ -228,6 +235,7 @@ header section.wrapper nav.right div.cart img {
 	background-repeat: no-repeat;
 	background-position: left;
 	background-size: 700px 800px;
+	font-family: 'Inter-Medium';
 }
 #spotlight section.wrapper {
 	padding: 220px 0;
@@ -235,25 +243,23 @@ header section.wrapper nav.right div.cart img {
 	justify-content: flex-end;
 }
 #spotlight div {
-	width: 52%;
+	width: 48%;
 }
 #spotlight div.right span.title {
-	font-size: 18px;
+	font-size: 17px;
 	display: block;
 	text-transform: uppercase;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 #spotlight div.right h1 {
-	font-size: 128px;
-	line-height: 0.9em;
-	margin-bottom: 25px;
-	font-family: 'Inter-Black';
-	
+	font-family: 'Inria Serif';
+	font-size: 110px;
+	margin-bottom: 10px;
 }
 #spotlight div.right p {
-	font-size: 18px;
-	margin-bottom: 40px;
-	line-height: 1.3em;
+	font-size: 17px;
+	margin-bottom: 42px;
+	line-height: 1.4em;
 }
 #spotlight div.right div.button {
 	display: flex;
@@ -261,7 +267,7 @@ header section.wrapper nav.right div.cart img {
 #spotlight div.right div.button a div.buy_now {
 	background: #fe8e0b;
 	color: #fff;
-    font-size: 0.8em; 
+    font-size: 0.7em; 
 	width: 150px;
     height: 50px;
 	padding-left: 20px;
@@ -289,7 +295,7 @@ header section.wrapper nav.right div.cart img {
 #spotlight div.right div.button a div.explore {
 	background: #000;
 	color: #fff;
-    font-size: 0.8em; 
+    font-size: 0.7em; 
 	width: 150px;
     height: 50px;
 	padding-right: 20px;
@@ -311,7 +317,6 @@ header section.wrapper nav.right div.cart img {
     -moz-transform: skew(-20deg);
     transform: skew(-20deg);
 	width: 25px;
-	z-index: -1;
 }
 
 #brands {
@@ -347,46 +352,37 @@ header section.wrapper nav.right div.cart img {
 
 #about {
 	margin: 100px 0;
+	font-family: 'Inter-Medium';
 }
 #about section.wrapper {
 	display: flex;
 	position: relative;
 }
 #about div.left {
-	width: 66%;
+	width: 67%;
 	background: #dedddc;
 	padding: 150px 70px;
 	border-radius: 20px 0 0 20px;
 }
 #about h2.about {
-	font-size: 50px;
-	font-weight: 600;
+	font-family: 'Inter-Semibold';
+	font-size: 58px;
 	margin-bottom: 15px;
 }
 #about p.about_start {
-	display: inline-block;
 	margin-bottom: 20px;
-	
+	letter-spacing: 0.03em; 
+	font-size: 16px;
 }
 #about p.about_end {
-	margin-bottom: 15px	;
-}
-#about section.wrapper div.left div.button {
-	width: 150px;
-	height: 50px;  
-	background: #000;
-    border-radius: 8px;
-    overflow: hidden;
-    -webkit-transform: perspective(150px) rotateX(-20deg);
-    transform-origin: 0%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	margin-bottom: 20px	;
+	letter-spacing: 0.03em;
+	font-size: 16px;
 }
 #about section.wrapper div.left a.button div.view {
 	background: #000;
 	color: #fff;
-    font-size: 0.8em; 
+    font-size: 0.7em; 
 	width: 150px;
     height: 50px;
 	padding-left: 20px;
@@ -412,7 +408,7 @@ header section.wrapper nav.right div.cart img {
 }
 #about div.right {
 	width: 36%;
-	height:592px;
+	height:629px;
 	border-radius: 8px;
 	position: absolute;
 	right: 0;
@@ -425,7 +421,7 @@ header section.wrapper nav.right div.cart img {
 }
 
 #features { 
-
+	font-family: 'Inter-Medium';
 }
 
 #features section.wrapper { 
@@ -441,7 +437,7 @@ header section.wrapper nav.right div.cart img {
 }
 
 #features section.wrapper section.nourish div.image { 
-	width: 47%;
+	width: 44%;
 }
 
 #features section.wrapper section.nourish div.image img { 
@@ -449,36 +445,40 @@ header section.wrapper nav.right div.cart img {
 }
 
 #features section.wrapper section.nourish div.content { 
-	width: 50%;
+	width: 54%;
 }
 
 #features section.wrapper section.nourish div.content div.curve { 
 	width: 95%;
 	margin: 0 0 0 5%;
-	margin-bottom: 120px;
+	margin-bottom: 100px;
 }
 
 #features section.wrapper section.nourish div.content div.curve img { 
 	width: 100%;
 }
 
-#features section.wrapper section.nourish div.content h2 { 
-	font-size: 60px;
+#features section.wrapper section.nourish div.content h2 {
+	font-family: 'Inter-Semibold'; 
+	font-size: 56px;
 	font-weight: 600;
 	margin-bottom: 20px;
 }
 
 #features section.wrapper section.nourish div.content p.start { 
 	margin-bottom: 20px;
+	letter-spacing: 0.02em;
 }
 
 #features section.wrapper section.nourish div.content p.end { 
- 	margin-bottom: 25px;
+ 	margin-bottom: 26px;
+	 letter-spacing: 0.02em;
+
 }
 #features section.wrapper section div a.button div {
 	background: #000;
 	color: #fff;
-    font-size: 0.8em; 
+    font-size: 0.7em; 
 	width: 150px;
     height: 50px;
 	padding-left: 20px;
@@ -517,13 +517,13 @@ header section.wrapper nav.right div.cart img {
 }
 
 #features section.wrapper section.natural div.content { 
-	width: 50%;
+	width: 54%;
 }
 
 #features section.wrapper section.natural div.content div.curve { 
 	width: 95%;
-	margin: 5% 0 0 0;
-	margin-bottom: 120px;
+	margin: 0 5% 0 0;
+	margin-bottom: 100px;
 }
 
 #features section.wrapper section.natural div.content div.curve img { 
@@ -531,17 +531,21 @@ header section.wrapper nav.right div.cart img {
 }
 
 #features section.wrapper section.natural div.content h2 { 
-	font-size: 60px;
+	font-family: 'Inter-Semibold'; 
+	font-size: 56px;
 	font-weight: 600;
 	margin-bottom: 20px;
+	width: 50%;
 }
 
 #features section.wrapper section.natural div.content p.start { 
 	margin-bottom: 20px;
+	letter-spacing: 0.02em;
 }
 
 #features section.wrapper section.natural div.content p.end { 
-	margin-bottom: 25px;
+	margin-bottom: 26px;
+	letter-spacing: 0.02em;
 }
 
 #features section.wrapper section.natural div.content div.button {
@@ -562,7 +566,7 @@ header section.wrapper nav.right div.cart img {
 }
 
 #features section.wrapper section.natural div.image { 
-	width: 47%;
+	width: 44%;
 }
 
 #features section.wrapper section.natural div.image img { 
@@ -579,7 +583,7 @@ header section.wrapper nav.right div.cart img {
 }
 
 #explore section.wrapper div.image { 
-	width: 47%;
+	width: 48%;
 }
 
 #explore section.wrapper div.image img { 
@@ -593,7 +597,7 @@ header section.wrapper nav.right div.cart img {
 #explore section.wrapper div.content div.curve { 
 	width: 95%;
 	margin: 0 0 0 5%;
-	margin-bottom: 220px;
+	margin-bottom: 200px;
 }
 
 #explore section.wrapper div.content div.curve img { 
@@ -601,20 +605,22 @@ header section.wrapper nav.right div.cart img {
 }
 
 #explore section.wrapper div.content h2 { 
-	font-size: 60px;
+	font-family: 'Inter-Semibold'; 
+	font-size: 56px;
 	font-weight: 600;
 	margin-bottom: 20px;
-	margin-left: 70px;
+	margin-left: 90px;
 }
 
 #explore section.wrapper div.content form.explore { 
-	margin-left: 70px; 
+	margin-left: 90px; 
 }
 
 #explore section.wrapper div.content form.explore input { 
 	padding: 20px 0 20px 16px;
 	background-color: #fafafa;
 	font-size: 16px;
+	font-family: 'Inter-Medium'; 
 	border-radius: 6px;
 	margin-right: 13px;
 }
@@ -625,10 +631,12 @@ header section.wrapper nav.right div.cart img {
 }
 
 #blog {
+	font-family: 'Inter-Medium';
 	text-align: center;
 	margin: 100px 0;
 }
 #blog h3.blog {
+	font-family: 'Inter-Semibold'; 
 	font-size: 56px;
 	font-weight: 600;
 	margin-bottom: 50px;
@@ -652,14 +660,17 @@ header section.wrapper nav.right div.cart img {
 }
 #blog section.wrapper section.best_award h5 {
 	font-size: 20px;
-	font-weight: 600;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-#blog section.wrapper section.best_award p {}
+#blog section.wrapper section.best_award p {
+	font-size: 16px;
+	font-family: 'Inter-Medium';
+}
 
 footer {
 	background: #d9dade;
+	font-family: 'Inter-Medium';
 	padding: 120px 0;
 	display: flex;
 	justify-content: space-between;
@@ -724,14 +735,15 @@ footer section.wrapper ul.blog, .about, .product {
 	margin-right: 170px;
 }
 footer section.wrapper ul li {
-	margin-bottom: 15px;
+	margin-bottom: 13px;
 }
 footer section.wrapper ul li:last-child {
 	margin-bottom: 0;
 }
 footer section.wrapper ul li h4 {
-	font-size: 20px;
-	font-weight: 600;
+	font-size: 22px;
+	font-family: 'Inter-Medium';
+
 }
 footer section.wrapper ul li a {
 	font-size: 13px;
