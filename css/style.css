@@ -1276,6 +1276,9 @@ footer div.bg_image {
 	header section.wrapper h1.logo {
 		width: 120px;
 	}
+	header section.wrapper nav.right div.search {
+		margin-right: 15px;
+	}
 	#spotlight {
 		background-image: none;
 	}
@@ -1289,11 +1292,10 @@ footer div.bg_image {
 		font-size: 42px;
 	}
 	#brands {
-		height: 140px;
+		height: 150px;
 	}
 	#brands ul.brands {
 		justify-content: flex-end;
-		
 	}
 	#brands ul.brands li {
 		width: 22%;
@@ -1363,7 +1365,7 @@ footer div.bg_image {
 		padding: 14px 0 14px 16px;
 	}
 	#explore section.wrapper div.content form.explore input[type=submit] {
-		padding: 14px 7px;
+		padding: 14px 10px;
 		font-size: 12px;
 	}
 	#blog h3.blog {
@@ -1398,6 +1400,29 @@ footer div.bg_image {
 	}
 	footer section.wrapper ul li {
 		margin-bottom: 8px;
+	}
+}
+@media all and (max-width:360px) {
+	#brands {
+		height: 230px;
+	}
+	#brands ul.brands {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#brands ul.brands li {
+		margin-right: 0;
+	}
+	#brands ul.brands li.microsoft {
+		margin-right: 0;
+	}
+	footer section.wrapper div.contact a.logo {
+		width: 100px;
+		margin-bottom: 12px;
+	}
+	footer section.wrapper ul li h4 {
+		font-size: 18px;
 	}
 }
 
