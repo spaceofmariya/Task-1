@@ -651,7 +651,7 @@ header section.wrapper nav.right div.cart a img {
 }
 #blog section.wrapper section.best_award div.image_container {
 	width: 90%;
-	height :250px;
+	/* height :250px; */
 	margin: 0 auto;
 }
 #blog section.wrapper section.best_award div.image_container img {
@@ -939,7 +939,7 @@ footer div.bg_image {
 		margin-bottom: 100px;
 	}
 	#explore section.wrapper div.content div.curve {
-		margin-bottom: 80px;
+		margin-bottom: 70px;
 	}
 	#explore section.wrapper div.content h2 {  
 		font-size: 40px;
@@ -948,13 +948,47 @@ footer div.bg_image {
 	#explore section.wrapper div.content form.explore { 
 		margin-left: 30px; 
 		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
 	}
 	#explore section.wrapper div.content form.explore input { 
 		padding: 15px 0 15px 15px;
+		font-size: 14px;
 	}
 	#explore section.wrapper div.content form.explore input[type=submit] { 
-		padding: 17px 18px;
-		margin-left: 5px;
+		padding: 14px 16px;
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	#blog section.wrapper {
+		flex-direction: column;
+	}
+	#blog section.wrapper section.best_award {
+		width: 100%;
+		margin-bottom: 40px;
+	}	
+	#blog section.wrapper section.best_award div.image_container {
+		width: 70%;
+	}
+    #blog section.wrapper section.best_award h5 {
+    	margin-top: 10px;
+    	margin-bottom: 10px;
+	}
+	#blog {
+		margin-bottom: 50px;
+	}
+	#blog section.wrapper section.best_award p {
+		width: 70%;
+	}
+	footer {
+		padding: 100px 0;
+	}
+	footer div.bg_image {
+		display: none;
+	}
+	footer section.wrapper ul.product {
+		margin-right: 0;
+	}
 }
 
 
