@@ -355,14 +355,17 @@ header section.wrapper nav.right div.cart a img {
 	font-family: 'Inter-Medium';
 }
 #about section.wrapper {
-	display: flex;
-	position: relative;
-}
-#about div.left {
-	width: 67%;
 	background: #dedddc;
-	padding: 150px 70px;
-	border-radius: 20px 0 0 20px;
+	border-radius: 20px;
+}
+#about section.wrapper section.inner_wrap {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+#about section.wrapper section.inner_wrap div.left {
+	width: 67%;
+	padding: 150px 0 150px 70px;
 }
 #about h2.about {
 	font-family: 'Inter-Semibold';
@@ -407,11 +410,9 @@ header section.wrapper nav.right div.cart a img {
 	width: 25px;
 }
 #about div.right {
-	width: 36%;
-	height:629px;
+	width: 40%;
 	border-radius: 8px;
-	position: absolute;
-	right: 0;
+	
 }
 #about div.right img {
 	border-radius: 20px;
@@ -666,6 +667,7 @@ header section.wrapper nav.right div.cart a img {
 #blog section.wrapper section.best_award p {
 	font-size: 16px;
 	font-family: 'Inter-Medium';
+	margin: 0 auto;
 }
 
 footer {
@@ -746,42 +748,32 @@ footer section.wrapper ul li h4 {
 footer section.wrapper ul li a {
 	font-size: 13px;
 }
-footer div.image {
-	width: 300px;
-	height: 300px;
-	background-image: url(../assets/haircare_combo1.jpg);
+footer div.bg_image {
+	display: inline;
+	height: 70%;
+	width: 20%; 
+	background-image: url(../assets/haircare_combo1\ \(1\).jpg);
 	background-repeat: no-repeat;
-	background-size: 87%;
+	background-position: right center;
+	object-fit: cover;
+	background-size: 100%;
 	transform:scaleX(-1);
 	position: absolute;
 	right: 0;
 	top:60px;
+	z-index: 2;
 }
 
 @media all and (max-width:1280px) {
 	header section.wrapper {
 		height: 100px;
 	}
-	#brands ul.brands li {
-		width: 12%;
-		margin-right: 80px;
-	}
-	#blog section.wrapper section.best_award p {
-		width: 95%;
-	}
-	footer section.wrapper div.contact {
-		margin-right: 150px;
-	}
-	footer section.wrapper ul.blog, .about, .product {
-		margin-right: 130px;
-	}
-}
-@media all and (min-width:980px) {
-	header section.wrapper {
-		height: 100px;
+	header section.wrapper nav.middle ul li {
+		margin-right: 45px;
 	}
 	#spotlight div.right h1 {
 		font-size: 90px;
+		width: 97%;
 	}
 	#brands ul.brands li {
 		width: 12%;
@@ -790,24 +782,31 @@ footer div.image {
 	#about div.left {
 		padding: 125px 70px;
 	}
-	#about div.right {
-		height: 630px;
+	#features section.wrapper section.nourish div.image { 
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
 	}
 	#features section.wrapper section.nourish div.content div.curve {
-		margin-bottom: 15px;
+		margin-bottom: 80px;
 	}
 	#features section.wrapper section.nourish div.content h2 {
 		font-size: 50px;
-		margin-bottom: 15px;
+		margin-bottom: 25px;
 	}
 	#features section.wrapper section.nourish div.content p.start {
-		margin-bottom: 5px;
+		margin-bottom: 18px;
 	}
 	#features section.wrapper section.nourish div.content p.end {
-		margin-bottom: 10px;
+		margin-bottom: 20px;
+	}
+	#features section.wrapper section.natural div.image { 
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
 	}
 	#features section.wrapper section.natural div.content div.curve {
-		margin-bottom: 15px;
+		margin-bottom: 80px;
 	}
 	#features section.wrapper section.natural div.content h2 {
 		font-size: 50px;
@@ -815,23 +814,24 @@ footer div.image {
 		width: 70%;
 	}
 	#features section.wrapper section.natural div.content p.start {
-		margin-bottom: 5px;
+		margin-bottom: 18px;
 	}
 	#features section.wrapper section.natural div.content p.end {
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 	#explore { 
 		margin-bottom: 120px;
 	}
 	#explore section.wrapper div.content div.curve {
-		margin-bottom: 120px;
+		margin-bottom: 150px;
 	}
 	#explore section.wrapper div.content h2 {  
-		font-size: 45px;
+		font-size: 50px;
 		margin-left: 30px;
 	}
 	#explore section.wrapper div.content form.explore { 
 		margin-left: 30px; 
+		margin-top: 30px;
 	}
 	#explore section.wrapper div.content form.explore input { 
 		padding: 17px 0 17px 16px;
@@ -842,20 +842,119 @@ footer div.image {
 		margin-left: 5px;
 	}
 	#blog section.wrapper section.best_award p {
-		width: 95%;
-		font-size: 15px;
+		width: 93%;
+		font-size: 16px;
 	}
 	footer section.wrapper div.contact {
-		margin-right: 80px;
+		margin-right: 13%;
 	}
 	footer section.wrapper ul.blog, .about, .product {
-		margin-right: 70px;
+		margin-right: 10%;
 	}
-	footer div.image {
-		width: 280px;
-		height: 280px;
-		top:75px;
+}
+@media all and (max-width:980px) {
+	header section.wrapper h1.logo {
+		width: 150px;
 	}
+	header section.wrapper nav.middle ul li {
+		margin-right: 30px;
+	}
+	#spotlight {
+		background-size: 70% 90%;
+	}
+	#spotlight section.wrapper {
+		padding: 120px 0;
+	}
+	#spotlight div.right span.title {
+		font-size: 15px;
+	}
+	#spotlight div.right h1 {
+		font-size: 60px;
+		width: 100%;
+	}
+	#spotlight div.right p {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+	#spotlight div.right div.button a div.buy_now {
+		width: 120px;
+	}
+	#spotlight div.right div.button a div.explore {
+		width: 120px;
+	}
+	#brands ul.brands li {
+		margin-right: 50px;
+	}
+	#about section.wrapper section.inner_wrap div.left {
+    	width: 67%;
+    	padding: 100px 0 100px 50px;
+	}
+	#about h2.about {
+		font-size: 50px;
+	}
+	#about section.wrapper div.left a.button div.view {
+		width: 120px;
+	}
+	#features section.wrapper section.nourish div.image { 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#features section.wrapper section.nourish div.content div.curve {
+		margin-bottom: 30px;
+	}
+	#features section.wrapper section.nourish div.content h2 {
+		font-size: 40px;
+		margin-bottom: 15px;
+	}
+	#features section.wrapper section.nourish div.content p.start {
+		margin-bottom: 13px;
+	}
+	#features section.wrapper section.nourish div.content p.end {
+		margin-bottom: 15px;
+	}
+	#features section.wrapper section div a.button div {
+		width: 120px; 
+	}
+	#features section.wrapper section.natural div.image { 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#features section.wrapper section.natural div.content div.curve {
+		margin-bottom: 30px;
+	}
+	#features section.wrapper section.natural div.content h2 {
+		font-size: 40px;
+		margin-bottom: 15px;
+		width: 70%;
+	}
+	#features section.wrapper section.natural div.content p.start {
+		margin-bottom: 13px;
+	}
+	#features section.wrapper section.natural div.content p.end {
+		margin-bottom: 15px;
+	}
+	#explore { 
+		margin-bottom: 100px;
+	}
+	#explore section.wrapper div.content div.curve {
+		margin-bottom: 80px;
+	}
+	#explore section.wrapper div.content h2 {  
+		font-size: 40px;
+		margin-left: 30px;
+	}
+	#explore section.wrapper div.content form.explore { 
+		margin-left: 30px; 
+		margin-top: 20px;
+	}
+	#explore section.wrapper div.content form.explore input { 
+		padding: 15px 0 15px 15px;
+	}
+	#explore section.wrapper div.content form.explore input[type=submit] { 
+		padding: 17px 18px;
+		margin-left: 5px;
 }
 
 
