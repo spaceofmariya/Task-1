@@ -11,20 +11,24 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 del {
 	text-decoration: line-through;
 }
+
 body {
-	font-family: 'Inter'/*, Arial, Helvetica, sans-serif*/;
+	font-family: 'Inter', Arial, Helvetica, sans-serif;
 	font-size: 17px;
 	color: #000;
 	overflow-x: hidden;
 	min-width: 320px;
 	font-weight: 500;
 }
+
 input,textarea,select{
 	font-family: "Inter-Regular", Arial, Helvetica, sans-serif;
 	font-weight: 500;
@@ -65,15 +69,6 @@ br.clear {
 }
 
 @font-face {
-    font-family: 'Inter-Thin';
-    src: url('../fonts/Inter-Thin.woff2') format('woff2'),
-        url('../fonts/Inter-Thin.woffss') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'Inter-Semibold';
     src: url('../fonts/Inter-SemiBold.woff2') format('woff2'),
         url('../fonts/Inter-SemiBold.woff') format('woff');
@@ -101,50 +96,6 @@ br.clear {
 }
 
 @font-face {
-    font-family: 'Inter-Light';
-    src: url('../fonts/Inter-Light.woff2') format('woff2'),
-        url('../fonts/Inter-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter-ExtraLight';
-    src: url('../fonts/Inter-ExtraLight.woff2') format('woff2'),
-        url('../fonts/Inter-ExtraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter-ExtraBold';
-    src: url('../fonts/Inter-ExtraBold.woff2') format('woff2'),
-        url('../fonts/Inter-ExtraBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter-Bold';
-    src: url('../fonts/Inter-Bold.woff2') format('woff2'),
-        url('../fonts/Inter-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter-Black';
-    src: url('../fonts/Inter-Black.woff2') format('woff2'),
-        url('../fonts/Inter-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
     font-family: 'Inria Serif';
     src: url('../fonts/InriaSerif-Bold.woff2') format('woff2'),
         url('../fonts/InriaSerif-Bold.woff') format('woff');
@@ -152,6 +103,7 @@ br.clear {
     font-style: normal;
     font-display: swap;
 }
+
 ::placeholder {
   color: #9B9B9B;
   opacity: 1;
@@ -165,70 +117,85 @@ br.clear {
   color: #9B9B9B;
 }
 
+
 header {
 	font-family: 'Inter-Medium';
-
 }
+
 header section.wrapper {
 	height: 80px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
+
 header section.wrapper h1.logo {
 	width: 170px;
 }
+
 header section.wrapper h1.logo a.logo {
 	width: 100%;
 }
+
 header section.wrapper h1.logo a.logo img {
 	width: 100%;
 }
-header section.wrapper nav.middle {}
+
 header section.wrapper nav.middle ul {
 	display: flex;
 	justify-content: space-between;
 }
+
 header section.wrapper nav.middle ul li {
 	margin-right: 50px;
 }
+
 header section.wrapper nav.middle ul:last-child {
 	margin-right: 0;
 }
+
 header section.wrapper nav.middle ul li a {
 	font-size: 16px;
 	font-weight: 500;
 }
+
 header section.wrapper nav.right {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
+
 header section.wrapper nav.right div.search {
 	margin-right: 30px;
 	width: 20px;
 }
+
 header section.wrapper nav.right div.search a {
 	width: 100%;
 }
+
 header section.wrapper nav.right div.cart {
 	background: #fe8e0b;
 	width: 40px;
 	height: 38px;
 	border-radius: 6px;
 }
+
 header section.wrapper nav.right div.cart a {
 	width: 100%;
 	height:100%;
 	display: flex;
 	justify-content: center;
 }
+
 header section.wrapper nav.right div a img {
 	width: 100%;
 }
+
 header section.wrapper nav.right div.cart a img {
 	width: 50%;
 }
+
 
 #spotlight {
 	background-image: url(../assets/serum_hero.png);
@@ -237,33 +204,40 @@ header section.wrapper nav.right div.cart a img {
 	background-size: 700px 800px;
 	font-family: 'Inter-Medium';
 }
+
 #spotlight section.wrapper {
 	padding: 220px 0;
 	display: flex;
 	justify-content: flex-end;
 }
+
 #spotlight div {
 	width: 48%;
 }
+
 #spotlight div.right span.title {
 	font-size: 17px;
 	display: block;
 	text-transform: uppercase;
 	margin-bottom: 40px;
 }
+
 #spotlight div.right h1 {
 	font-family: 'Inria Serif';
 	font-size: 110px;
 	margin-bottom: 10px;
 }
+
 #spotlight div.right p {
 	font-size: 17px;
 	margin-bottom: 42px;
 	line-height: 1.4em;
 }
+
 #spotlight div.right div.button {
 	display: flex;
 }
+
 #spotlight div.right div.button a div.buy_now {
 	background: #fe8e0b;
 	color: #fff;
@@ -278,6 +252,7 @@ header section.wrapper nav.right div.cart a img {
 	align-items: center;
 	margin-right: 45px; 
 }
+
 #spotlight div.right div.button a div.buy_now:after {
 	background: #fe8e0b;
 	border-radius: 0 10px 6px 0;
@@ -305,6 +280,7 @@ header section.wrapper nav.right div.cart a img {
 	justify-content:center;
 	align-items: center;
 }
+
 #spotlight div.right div.button a div.explore:after {
     background: #000; 
 	border-radius: 6px 0 0 10px;
@@ -319,72 +295,87 @@ header section.wrapper nav.right div.cart a img {
 	width: 25px;
 }
 
+
 #brands {
 	background: #f7f5f1;
 	height: 130px;
 	display: flex;
 	align-items: center;
 }
+
 #brands ul.brands {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
+
 #brands ul.brands li {
 	width: 12%;
 	margin-right: 100px;
 }
+
 #brands ul.brands li.ebay {
 	width: 10%;
 }
+
 #brands ul.brands li.cisco {
 	width: 7%;
 }
-#brands ul.brands li.uber {}
+
 #brands ul.brands li.microsoft {
 	width: 16%;
 	margin-right: 0;
 }
+
 #brands ul.brands li img {
 	display: block;
 	width: 100%;
 }
 
+
 #about {
 	margin: 100px 0;
 	font-family: 'Inter-Medium';
 }
+
 #about section.wrapper {
 	background: #dedddc;
 	border-radius: 20px;
 }
+
 #about section.wrapper section.inner_wrap {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
+
 #about section.wrapper section.inner_wrap div.left {
 	width: 67%;
 	padding: 150px 0 150px 70px;
 }
+
 #about h2.about {
 	font-family: 'Inter-Semibold';
 	font-size: 58px;
 	margin-bottom: 15px;
 }
+
 #about p.about_start {
 	margin-bottom: 20px;
 	letter-spacing: 0.03em; 
 	font-size: 16px;
 }
+
 #about p.about_end {
 	margin-bottom: 20px	;
 	letter-spacing: 0.03em;
 	font-size: 16px;
 }
+
 #about section.wrapper div.left a.button {
 	display: inline-block;
 }
+
 #about section.wrapper div.left a.button div.view {
 	background: #000;
 	color: #fff;
@@ -399,6 +390,7 @@ header section.wrapper nav.right div.cart a img {
 	align-items: center;
 	margin-right: 45px; 
 }
+
 #about section.wrapper div.left a.button div.view:after {
 	background: #000;
 	border-radius: 0 10px 6px 0;
@@ -412,17 +404,20 @@ header section.wrapper nav.right div.cart a img {
     transform: skew(-20deg);
 	width: 25px;
 }
+
 #about div.right {
 	width: 40%;
 	border-radius: 8px;
 	
 }
+
 #about div.right img {
 	border-radius: 20px;
 	display: block;
 	width: 100%;
 	height: 100%;
 }
+
 
 #features { 
 	font-family: 'Inter-Medium';
@@ -477,11 +472,12 @@ header section.wrapper nav.right div.cart a img {
 #features section.wrapper section.nourish div.content p.end { 
  	margin-bottom: 26px;
 	 letter-spacing: 0.02em;
-
 }
+
 #features section.wrapper section div a.button {
 	display: inline-block;
 }
+
 #features section.wrapper section div a.button div {
 	background: #000;
 	color: #fff;
@@ -566,7 +562,8 @@ header section.wrapper nav.right div.cart a img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
- }
+}
+
 #features section.wrapper section.natural div.content div.button a.button { 
 	color: #fff;	
 	font-size: 14px;
@@ -579,6 +576,7 @@ header section.wrapper nav.right div.cart a img {
 #features section.wrapper section.natural div.image img { 
 	width: 100%;
 }
+
 
 #explore { 
 	margin-bottom: 200px;
@@ -630,6 +628,7 @@ header section.wrapper nav.right div.cart a img {
 	font-family: 'Inter-Medium'; 
 	border-radius: 6px;
 }
+
 #explore section.wrapper div.content form.explore input[type=submit] { 
 	color: #fff;
 	background: #000;
@@ -637,44 +636,53 @@ header section.wrapper nav.right div.cart a img {
 	margin-left: 13px;
 }
 
+
 #blog {
 	font-family: 'Inter-Medium';
 	text-align: center;
 	margin: 100px 0;
 }
+
 #blog h3.blog {
 	font-family: 'Inter-Semibold'; 
 	font-size: 56px;
 	font-weight: 600;
 	margin-bottom: 50px;
 }
+
 #blog section.wrapper {
 	display: flex;
 	justify-content: space-between;
 }
+
 #blog section.wrapper section.best_award {
 	width: 33%;
 }
+
 #blog section.wrapper section.best_award div.image_container {
 	width: 90%;
 	height: 55%;
 	margin: 0 auto;
 }
+
 #blog section.wrapper section.best_award div.image_container img {
 	width: 100%;
 	height: 100%;
 	border-radius: 8px;
 }
+
 #blog section.wrapper section.best_award h5 {
 	font-size: 20px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+
 #blog section.wrapper section.best_award p {
 	font-size: 16px;
 	font-family: 'Inter-Medium';
 	margin: 0 auto;
 }
+
 
 footer {
 	background: #d9dade;
@@ -683,38 +691,46 @@ footer {
 	position: relative;
 	z-index: 1; 
 }
+
 footer section.wrapper {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 }
+
 footer section.wrapper div.contact {
 	text-align: center;
 	margin-right: 170px;
 }
+
 footer section.wrapper div.contact a.logo {
 	display: block;
 	width: 130px;
 	margin: 0 auto; 
 	margin-bottom: 20px;
 }
+
 footer section.wrapper div.contact a.logo img {
 	display: block;
 	width: 100%;
 }
+
 footer section.wrapper div.contact a.email {
 	display: block;
 	margin-bottom: 15px;
 	font-size: 13px;
 }
+
 footer section.wrapper div.contact a.mob_number {
 	font-size: 13px;
 }
+
 footer section.wrapper div.contact ul.social {
 	display: flex;
 	justify-content: center;
 	margin-top: 15px;
 }
+
 footer section.wrapper div.contact ul.social li {
 	background-color: #fe8e0b;
 	width: 30px;
@@ -723,9 +739,11 @@ footer section.wrapper div.contact ul.social li {
 	margin-bottom: 0;
 	border-radius: 6px;
 }
+
 footer section.wrapper div.contact ul.social li.twt {
 	margin-right: 0;
 }
+
 footer section.wrapper div.contact ul.social li a {
 	width: 100%;
 	height: 100%;
@@ -733,27 +751,33 @@ footer section.wrapper div.contact ul.social li a {
 	justify-content: center;
 	align-items: center;
 }
+
 footer section.wrapper div.contact ul.social li a img {
 	filter:invert(100%);
 	width: 70%;
 }
+
 footer section.wrapper ul.blog, .about, .product {
 	margin-right: 170px;
 }
+
 footer section.wrapper ul li {
 	margin-bottom: 13px;
 }
+
 footer section.wrapper ul li:last-child {
 	margin-bottom: 0;
 }
+
 footer section.wrapper ul li h4 {
 	font-size: 22px;
 	font-family: 'Inter-Medium';
-
 }
+
 footer section.wrapper ul li a {
 	font-size: 13px;
 }
+
 footer div.bg_image {
 	display: inline;
 	height: 70%;
@@ -769,6 +793,7 @@ footer div.bg_image {
 	top:60px;
 	z-index: 2;
 }
+
 
 @media all and (max-width:1280px) {
 	header section.wrapper {
@@ -841,7 +866,6 @@ footer div.bg_image {
 	}
 	#explore section.wrapper div.content form.explore input { 
 		padding: 17px 0 17px 16px;
-
 	}
 	#explore section.wrapper div.content form.explore input[type=submit] { 
 		padding: 17px 18px;
@@ -858,6 +882,7 @@ footer div.bg_image {
 		margin-right: 10%;
 	}
 }
+
 @media all and (max-width:980px) {
 	header section.wrapper h1.logo {
 		width: 150px;
@@ -996,6 +1021,7 @@ footer div.bg_image {
 		margin-right: 0;
 	}
 }
+
 @media all and (max-width:768px) {
 	header section.wrapper {
 		justify-content: space-around;
@@ -1188,6 +1214,7 @@ footer div.bg_image {
 		text-align: center;
 	}
 }
+
 @media all and (max-width:640px) {
 	header section.wrapper h1.logo {
 		width: 130px;
@@ -1402,6 +1429,7 @@ footer div.bg_image {
 		margin-bottom: 8px;
 	}
 }
+
 @media all and (max-width:360px) {
 	#brands {
 		height: 230px;
