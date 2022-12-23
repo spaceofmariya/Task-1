@@ -551,19 +551,6 @@ header section.wrapper nav.right div.cart a img {
 	letter-spacing: 0.02em;
 }
 
-#features section.wrapper section.natural div.content div.button {
-	width: 150px;
-	height: 50px;  
-	background: #000;
-    border-radius: 8px;
-    overflow: hidden;
-    -webkit-transform: perspective(150px) rotateX(-20deg);
-    transform-origin: 0%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 #features section.wrapper section.natural div.content div.button a.button { 
 	color: #fff;	
 	font-size: 14px;
