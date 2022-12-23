@@ -476,6 +476,9 @@ header section.wrapper nav.right div.cart a img {
 	 letter-spacing: 0.02em;
 
 }
+#features section.wrapper section div a.button {
+	display: inline-block;
+}
 #features section.wrapper section div a.button div {
 	background: #000;
 	color: #fff;
@@ -988,6 +991,198 @@ footer div.bg_image {
 	}
 	footer section.wrapper ul.product {
 		margin-right: 0;
+	}
+}
+@media all and (max-width:768px) {
+	header section.wrapper {
+		justify-content: space-around;
+	}
+	header section.wrapper nav.middle {
+		display: none;
+	}
+	#spotlight section.wrapper {
+		padding: 80px 0;
+	}
+	#spotlight div.right span.title {
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
+	#spotlight div.right h1 {
+		font-size: 54px;
+	}
+	#spotlight div.right p {
+		font-size: 15px;
+		margin-bottom: 20px;
+		width: 90%;
+	}
+	#spotlight div.right div.button a div.buy_now {
+		width: 100px;
+		height: 45px;
+		padding-left: 0;
+	}
+	#spotlight div.right div.button a div.buy_now:after {
+		height: 45px;
+	}
+	#spotlight div.right div.button a div.explore {
+		width: 100px;
+		height: 45px;
+		padding-right: 0;
+	}
+	#spotlight div.right div.button a div.explore:after {
+		height: 45px;
+	}
+	#brands {
+		height: 150px
+	}
+	#brands ul.brands {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#brands ul.brands li {
+		width: 20%;
+		margin-right: 80px;
+		margin-bottom: 25px;
+	}
+	#brands ul.brands li.ebay {
+		width: 12%;
+	}
+	#brands ul.brands li.cisco {
+		width: 11%;
+	}	
+	#brands ul.brands li.uber {
+		width: 15%;
+		margin-bottom: 0;
+	}
+	#brands ul.brands li.microsoft {
+		width: 20%;
+		margin-bottom: 0;
+	}
+	#about {
+		margin: 80px 0;
+	}
+	#about section.wrapper section.inner_wrap div.left {
+		width: 100%;
+		padding: 70px 50px;
+	}
+	#about h2.about {
+		font-size: 40px;
+		margin-bottom: 10px;
+	}
+	#about p.about_start {
+		margin-bottom: 10px;
+	}
+	#about p.about_end {
+		margin-bottom: 10px;
+	}
+	#about section.wrapper div.left a.button div.view {
+		width: 100px;
+		height: 40px;
+		padding-left: 10px;
+	}
+	#about section.wrapper div.left a.button div.view:after {
+		height: 40px;
+	}
+	#about div.right {
+		display: none;
+	}
+	#features section.wrapper section.nourish {
+		width: 100%;
+		flex-direction: column;
+		margin-bottom: 80px;
+	}
+	#features section.wrapper section.nourish div.image {
+		width: 50%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	#features section.wrapper section.nourish div.content {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#features section.wrapper section.nourish div.content div.curve {
+		display: none;
+	}
+	#features section.wrapper section.nourish div.content h2 {
+		font-size: 38px;
+		margin-bottom: 15px;
+		margin: 0 auto;
+	}
+	#features section.wrapper section div a.button div {
+		width: 100px;
+		height: 40px;
+		padding-left: 10px;
+	}
+	#features section.wrapper section div a.button div:after {
+		height: 40px;
+	}
+	#features section.wrapper section.natural {
+		width: 100%;
+		flex-direction: column-reverse;
+		margin-bottom: 90px;
+	}
+	#features section.wrapper section.natural div.image {
+		width: 50%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	#features section.wrapper section.natural div.content {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#features section.wrapper section.natural div.content div.curve {
+		display: none;
+	}
+	#features section.wrapper section.natural div.content h2 {
+		font-size: 38px;
+		margin-bottom: 15px;
+		margin: 0 auto;
+	}
+	#explore section.wrapper div.image {
+		display: none;
+	}
+	#explore section.wrapper div.content {
+		width: 100%;
+	}
+	#explore section.wrapper div.content div.curve {
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	#explore section.wrapper div.content h2 {
+		font-size: 38px;
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#explore section.wrapper div.content form.explore {
+		margin-left: 0;
+		flex-direction: row;
+		justify-content: center;
+	}
+	#explore section.wrapper div.content form.explore input { 
+		padding: 14px 16px;
+	}
+	#explore section.wrapper div.content form.explore input[type=submit] { 
+		padding: 14px 16px;
+		margin-left: 15px;
+		margin-top: 0;
+	}
+	#blog h3.blog {
+		font-size: 42px;
+		font-weight: 600;
+		margin-bottom: 40px;
+	}
+	footer section.wrapper {
+		justify-content: space-around;
+	}
+	footer section.wrapper div.contact {
+		margin-right: 5%;
+	}
+	footer section.wrapper ul.blog, .about, .product {
+		margin-right: 0;
+		text-align: center;
 	}
 }
 
