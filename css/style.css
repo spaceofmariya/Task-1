@@ -657,7 +657,7 @@ header section.wrapper nav.right div.cart a img {
 }
 #blog section.wrapper section.best_award div.image_container {
 	width: 90%;
-	/* height :250px; */
+	height: 55%;
 	margin: 0 auto;
 }
 #blog section.wrapper section.best_award div.image_container img {
@@ -758,7 +758,7 @@ footer div.bg_image {
 	display: inline;
 	height: 70%;
 	width: 20%; 
-	background-image: url(../assets/haircare_combo1\ \(1\).jpg);
+	background-image: url(../assets/haircare_combo1.jpg);
 	background-repeat: no-repeat;
 	background-position: right center;
 	object-fit: cover;
