@@ -1269,6 +1269,137 @@ footer div.bg_image {
 	}
 }
 
+@media all and (max-width:480px) {
+	header section.wrapper {
+		height: 80px;
+	}
+	header section.wrapper h1.logo {
+		width: 120px;
+	}
+	#spotlight {
+		background-image: none;
+	}
+	#spotlight section.wrapper {
+		padding: 50px 0;
+	}
+	#spotlight div {
+		width: 90%;
+	}
+	#spotlight div.right h1 {
+		font-size: 42px;
+	}
+	#brands {
+		height: 140px;
+	}
+	#brands ul.brands {
+		justify-content: flex-end;
+		
+	}
+	#brands ul.brands li {
+		width: 22%;
+		margin-right: 80px;
+		margin-bottom: 20px;
+	}
+	#brands ul.brands li.ebay {
+		width: 15%;
+	}
+	#brands ul.brands li.cisco {
+		width: 13%;
+	}
+	#brands ul.brands li.uber {
+		width: 20%;
+		margin-bottom: 20px;
+	}
+	#brands ul.brands li.microsoft {
+		width: 25%;
+		margin-right: 130px;
+	}
+	#about section.wrapper section.inner_wrap div.left {
+		padding: 30px 20px 35px;
+	}
+	#about h2.about {
+		font-size: 32px;
+	}
+	#about p.about_start {
+		font-size: 15px;
+		margin-bottom: 5px;
+	}
+	#about p.about_end {
+		font-size: 15px;
+	}
+	#features section.wrapper section.nourish {
+		margin-bottom: 60px;
+	}
+	#features section.wrapper section.nourish div.content h2 {
+		font-size: 30px;
+	}
+	#features section.wrapper section.nourish div.content p.start {
+		margin-bottom: 5px;
+		font-size: 15px;
+	}
+	#features section.wrapper section.nourish div.content p.end {
+		font-size: 15px;
+	}
+	#features section.wrapper section.natural div.content h2 {
+		width: 100%;
+		font-size: 30px;
+	}
+	#features section.wrapper section.natural div.content p.start {
+		margin-bottom: 5px;
+		font-size: 15px;
+	}
+	#features section.wrapper section.natural div.content p.end {
+		font-size: 15px;
+	}
+	#explore {
+		margin-bottom: 50px;
+	}
+	#explore section.wrapper div.content h2 {
+		width: 100%;
+		font-size: 32px;
+	}
+	#explore section.wrapper div.content form.explore input[type=email] {
+		width: 50%;
+		padding: 14px 0 14px 16px;
+	}
+	#explore section.wrapper div.content form.explore input[type=submit] {
+		padding: 14px 7px;
+		font-size: 12px;
+	}
+	#blog h3.blog {
+		font-size: 34px;
+	}
+	#blog section.wrapper section.best_award div.image_container {
+		width: 90%;
+	}
+	#blog section.wrapper section.best_award p {
+		width: 90%;
+		font-size: 15px;
+	}
+	footer {
+		padding: 60px 0;
+	}
+	footer section.wrapper div.contact a.logo {
+		width: 120px;
+		margin-bottom: 12px;
+	}
+	footer section.wrapper div.contact a.email {
+		margin-bottom: 8px;
+	}
+	footer section.wrapper div.contact ul.social {
+		margin-top: 10px;
+	}
+	footer section.wrapper div.contact ul.social li {
+		margin-right: 10px;
+	}
+	footer section.wrapper ul.blog, .about, .product {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	footer section.wrapper ul li {
+		margin-bottom: 8px;
+	}
+}
 
 
 
