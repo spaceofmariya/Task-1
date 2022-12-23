@@ -382,6 +382,9 @@ header section.wrapper nav.right div.cart a img {
 	letter-spacing: 0.03em;
 	font-size: 16px;
 }
+#about section.wrapper div.left a.button {
+	display: inline-block;
+}
 #about section.wrapper div.left a.button div.view {
 	background: #000;
 	color: #fff;
@@ -1183,6 +1186,86 @@ footer div.bg_image {
 	footer section.wrapper ul.blog, .about, .product {
 		margin-right: 0;
 		text-align: center;
+	}
+}
+@media all and (max-width:640px) {
+	header section.wrapper h1.logo {
+		width: 130px;
+	}
+	#spotlight {
+		background-size: 250px 500px;
+	}
+	#spotlight section.wrapper {
+		padding: 60px 0;
+	}
+	#spotlight div {
+		width: 65%;
+	}
+	#spotlight div.right span.title {
+		font-size: 13px;
+		margin-bottom: 25px;
+	}
+	#spotlight div.right h1 {
+		font-size: 46px;
+		width: 80%;
+	}
+	#spotlight div.right div.button a div.buy_now {
+		margin-right: 35px;
+	}
+	#brands {
+		height: 120px
+	}
+	#brands ul.brands li {
+		margin-right: 65px;
+		margin-bottom: 25px;
+	}
+	#about {
+		margin: 65px 0;
+	}
+	#about section.wrapper section.inner_wrap div.left {
+		padding: 40px 30px 50px;
+	}
+	#about h2.about {
+		font-size: 36px;
+		margin-bottom: 15px;
+	}
+	#features section.wrapper section.nourish {
+		margin-bottom: 70px;
+	}
+	#features section.wrapper section.nourish div.content h2 {
+		margin-bottom: 15px;
+	}
+	#features section.wrapper section.natural {
+		margin-bottom: 70px;
+	}
+	#features section.wrapper section.natural div.content h2 {
+		width: 90%;
+		margin-bottom: 15px;
+	}
+	#explore section.wrapper div.content h2 {
+		font-size: 36px;
+	}
+	#blog h3.blog {
+		font-size: 38px;
+	}
+	#blog section.wrapper section.best_award.three {
+		margin-bottom: 0;
+	}
+	footer {
+		padding: 70px 0;
+	}
+	footer section.wrapper {
+		flex-wrap: wrap;
+		flex-direction: row-reverse;
+		align-items: start;
+	}
+	footer section.wrapper div.contact {
+		width: 100%;
+		order: 1;
+	}
+	footer section.wrapper ul.blog, .about, .product {
+		margin-bottom: 50px;
+		text-align: left;
 	}
 }
 
